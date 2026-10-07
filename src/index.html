@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevOps Hackathon - Đề 002 - Nguyễn Đăng Quang</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f9;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .header {
+            background-color: #0d6efd;
+            color: #fff;
+            padding: 25px 20px;
+            border-radius: 8px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .header h1 {
+            font-size: 22px;
+            margin-bottom: 8px;
+        }
+
+        .header p {
+            font-size: 15px;
+            opacity: 0.95;
+        }
+
+        .update-box {
+            background-color: #dcfce7;
+            border: 1px solid #22c55e;
+            color: #15803d;
+            padding: 12px 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            font-weight: bold;
+            font-size: 14.5px;
+        }
+
+        .grid {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+
+        .card {
+            flex: 1;
+            min-width: 300px;
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+        }
+
+        .card h2 {
+            font-size: 18px;
+            color: #0d6efd;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table td {
+            padding: 8px 4px;
+            border-bottom: 1px solid #f0f0f0;
+            font-size: 14px;
+        }
+
+        table td.label {
+            font-weight: bold;
+            color: #555;
+            width: 45%;
+        }
+
+        a {
+            color: #0d6efd;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .intro-box {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .intro-box h2 {
+            font-size: 18px;
+            color: #0d6efd;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+            margin-bottom: 12px;
+        }
+
+        .intro-box p {
+            font-size: 14.5px;
+            color: #444;
+            text-align: justify;
+        }
+
+        .footer {
+            text-align: center;
+            color: #888;
+            font-size: 13px;
+            margin-top: 20px;
+            padding-top: 15px;
+            border-top: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Xin chào đến với Ptit Rikkei Devops Lab - Nguyễn Đăng Quang - B24DTCN149 - CNTT1</h1>
+            <p>Bài thi thực hành DevOps Fundamentals - Triển khai Web tĩnh trên Linux Nginx</p>
+        </div>
+
+
+        <div class="grid">
+            <!-- Thông tin sinh viên -->
+            <div class="card">
+                <h2>Thông tin sinh viên</h2>
+                <table>
+                    <tr>
+                        <td class="label">Họ và tên:</td>
+                        <td>Nguyễn Đăng Quang</td>
+                    </tr>
+                    <tr>
+                        <td class="label">Mã sinh viên:</td>
+                        <td>B24DTCN149</td>
+                    </tr>
+                    <tr>
+                        <td class="label">Lớp:</td>
+                        <td>CNTT1</td>
+                    </tr>
+                    <tr>
+                        <td class="label">Email:</td>
+                        <td><a href="mailto:Nguyendangquang0510@gmail.com">Nguyendangquang0510@gmail.com</a></td>
+                    </tr>
+                    <tr>
+                        <td class="label">Tài khoản Linux:</td>
+                        <td>nguyendangquang-cntt1</td>
+                    </tr>
+                    <tr>
+                        <td class="label">GitHub:</td>
+                        <td><a href="https://github.com/quang0510" target="_blank">quang0510</a></td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- Thông tin bài thi  -->
+            <div class="card">
+                <h2>Thông tin bài thi</h2>
+                <table>
+                    <tr>
+                        <td class="label">Đề số:</td>
+                        <td>002</td>
+                    </tr>
+                    <tr>
+                        <td class="label">Chủ đề:</td>
+                        <td>Quản lý sản phẩm (Shop)</td>
+                    </tr>
+                    <tr>
+                        <td class="label">Cổng Nginx:</td>
+                        <td>8081</td>
+                    </tr>
+                    <tr>
+                        <td class="label">IP máy chủ:</td>
+                        <td>172.28.45.58</td>
+                    </tr>
+                    <tr>
+                        <td class="label">Ngày thi:</td>
+                        <td>07/10/2026</td>
+                    </tr>
+                    <tr>
+                        <td class="label">Repository:</td>
+                        <td><a href="https://github.com/quang0510/IT_209_NguyenDangQuang_De02" target="_blank">IT_209_NguyenDangQuang_De02</a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <!-- Giới thiệu hệ thống Quản lý sản phẩm  -->
+        <div class="intro-box">
+            <h2>Giới thiệu hệ thống Quản lý sản phẩm (Shop)</h2>
+            <p>
+                Trang web này phục vụ cho việc quản lý danh mục và thông tin sản phẩm của cửa hàng trực tuyến (Shop) tại hệ thống DevOps. Nền tảng hỗ trợ tra cứu mã sản phẩm, đơn giá, tình trạng kho hàng và phân loại mặt hàng một cách trực quan, chính xác. Website được cấu hình và vận hành trên nền web server Nginx với cổng riêng biệt 8081 nhằm đáp ứng đầy đủ yêu cầu bài thi thực hành.
+            </p>
+        </div>
+
+        <div class="footer">
+            Nguyễn Đăng Quang - B24DTCN149 - Lớp CNTT1
+        </div>
+    </div>
+</body>
+</html>
